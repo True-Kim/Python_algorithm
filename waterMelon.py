@@ -1,4 +1,4 @@
-def tnqkr(n):
+def warterMelon(n):
     answer = '수박'
 
     if n<=10000:
@@ -8,6 +8,6 @@ def tnqkr(n):
             answer=answer*(n//2)+answer[0]
     print(answer)
     return(answer)
-tnqkr(3)
-tnqkr(15)
+waterMelon(3)
+waterMelon(15)
 
