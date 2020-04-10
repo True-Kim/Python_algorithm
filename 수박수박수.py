@@ -1,4 +1,4 @@
-def warterMelon(n):
+def waterMelon(n):
     answer = '수박'
     if n<=10000:
         if n%2==0:
