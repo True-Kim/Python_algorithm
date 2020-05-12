@@ -28,7 +28,7 @@ def solution(n, arr1, arr2):
     answer = [str(x) for x in answer]
     print(answer)
     for a in range(len(answer)):
-        answer[a]=answer[a].zfill(n)
+        answer[a] = answer[a].zfill(n) # answer[a]의 앞쪽에 answer[a]가 n의 길이만큼 채워지도록 0을 넣어주겠다는 뜻
         answer[a] = answer[a].replace('0', ' ')
         answer[a] = answer[a].replace('1', '#')
         answer[a] = answer[a].replace('2', '#')
@@ -38,7 +38,7 @@ def solution(n, arr1, arr2):
 #!오류! 2진수의 길이가 n의 길이보다 짧을 때!
 # ex) 11220 => 011220
 # ex) 12221 => 012221
-# answer[a]=answer[a].zfill(n) 넣었더니 됨...
+# answer[a] = answer[a].zfill(n) 넣었더니 됨...
 
 # solution(5,[9, 20, 28, 18, 11],[30, 1, 21, 17, 28])
 # ['12111', '10101', '21201', '20011', '12111']
