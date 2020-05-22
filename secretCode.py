@@ -11,13 +11,13 @@ def solution(s, n):
     for i in range(len(s)):
         ords.append(ord(s[i]))
         # ords[i]가 대문자일 때,
-        if ords[i]>=65 and ords[i]<=90 and ords[i]!=32:
+        if ords[i]>=65 and ords[i]<=90:
             if ords[i]+n>90:
                 answer=answer+chr(ords[i]+n-26)
             else :
                 answer=answer+chr(ords[i]+n)
         # ords[i]가 소문자일 때,
-        elif ords[i]>=97 and ords[i]<=122 and ords[i]!=32:
+        elif ords[i]>=97 and ords[i]<=122:
             if ords[i]+n>122:
                 answer=answer+chr(ords[i]+n-26)
             else :
