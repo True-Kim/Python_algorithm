@@ -1,9 +1,9 @@
-def solution(x, n):
+def spaceX(x, n):
     answer = []
     for i in range (1,n+1):
         answer.append(x*i)
     return answer
 
-solution(2,5)
-solution(4,3)
-solution(-4,2)
+spaceX(2,5)
+spaceX(4,3)
+spaceX(-4,2)
