@@ -5,10 +5,17 @@
 def solution(arr1):
     count = 0
     for i in range(len(arr1)):
-        if arr1[i] == 5:
-            count+=1
-        elif arr1[i]+arr1[i+1] == 5:
-            count+=1
+        if arr1[i]< arr1[-1]:
+            if arr1[i] == 5:
+                count+=1
+            elif arr1[i]+arr1[i+1] == 5:
+                count+=1
+        elif arr1[i] == arr1[-1]:
+            if arr1[i] == 5:
+                count+=1
     print(count)
     return count
+
 solution([1,2,3,2,5])
+solution([2,2,4,1,4])
+solution([2,5,4,6,1,4,5])
